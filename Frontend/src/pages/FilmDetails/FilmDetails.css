@@ -218,6 +218,16 @@
   
 }
 
+.film-details-scriptDownload {
+  margin: 56px 0 72px;
+}
+
+.film-details-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 900px;
+}
 /* mobile */
 @media (max-width: 800px) {
   .film-details {

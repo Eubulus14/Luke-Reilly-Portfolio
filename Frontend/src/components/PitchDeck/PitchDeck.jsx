@@ -21,29 +21,33 @@ const PitchDeck = ({ pitchPhotos = [], filmTitle = "Film" }) => {
         {pitchPhotos.map((photo, index) => (
           <motion.figure
             key={photo.id}
-            className={`pitch-deck-item pitch-deck-item-${(index % 5) + 1}`}
-            initial={{ opacity: 0, y: 24, rotate: index % 2 === 0 ? -1 : 1 }}
-            whileInView={{ opacity: 1, y: 0, rotate: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            className={`pitch-deck-item pitch-deck-item-${(index % 11) + 1}`}
+            initial={{
+              opacity: 0,
+              y: 28,
+              rotate: index % 2 === 0 ? -1.2 : 1.2,
+              scale: 0.96,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              rotate: 0,
+              scale: 1,
+            }}
+            viewport={{ once: true, amount: 0.18 }}
             transition={{
-              duration: 0.6,
-              delay: index * 0.06,
+              duration: 0.65,
+              delay: index * 0.045,
               ease: "easeOut",
             }}
           >
             <div className="pitch-deck-imageWrap">
               <img
                 src={photo.image}
-                alt={photo.alt || `${filmTitle} pitch deck slide`}
+                alt={photo.alt || `${filmTitle} pitch deck slide ${index + 1}`}
                 className="pitch-deck-image"
               />
             </div>
-
-            {photo.caption && (
-              <figcaption className="pitch-deck-caption">
-                {photo.caption}
-              </figcaption>
-            )}
           </motion.figure>
         ))}
       </div>

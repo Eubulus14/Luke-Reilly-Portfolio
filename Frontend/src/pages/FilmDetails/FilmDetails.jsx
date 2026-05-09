@@ -170,42 +170,29 @@ const FilmDetails = () => {
         </motion.div>
       )}
 
-      {film.scriptImages && film.scriptImages.length > 0 && (
-        <motion.div
-          className="film-details-scriptImages"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-        >
-          <h2 className="film-details-sectionTitle">
-            Selected Script Materials
-          </h2>
+<PitchDeck pitchPhotos={film.pitchPhotos} filmTitle={film.title} />
 
-          {film.scriptImages.map((scriptImage) => (
-            <motion.div
-              key={scriptImage.id}
-              className="film-details-imageWrap"
-              initial={{ opacity: 0, scale: 1.02 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-              <figure className="film-details-scriptPaper">
-                <img
-                  src={scriptImage.image}
-                  alt={scriptImage.alt || `${film.title} script material`}
-                  className="film-details-scriptImage"
-                />
 
-                {hasValue(scriptImage.caption) && (
-                  <figcaption className="film-details-scriptCaption">
-                    {scriptImage.caption}
-                  </figcaption>
-                )}
-              </figure>
-            </motion.div>
-          ))}
-        </motion.div>
-      )}
+{film.scriptDownload?.file && (
+  <motion.div
+    className="film-details-scriptDownload"
+    initial={{ opacity: 0, y: 24 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+  >
+    <DoodleButton
+      href={film.scriptDownload.file}
+      external={true}
+      download
+      className="film-details-doodleLink"
+    >
+      {film.scriptDownload.label || "Download the Script"}
+    </DoodleButton>
+  </motion.div>
+)}
+
+
+      
 
       {film.trailer?.cloudflareId && (
         <motion.div
@@ -221,22 +208,35 @@ const FilmDetails = () => {
         </motion.div>
       )}
 
-      {hasValue(film.image) && (
-        <motion.div
-          className="film-details-imageWrap"
-          initial={{ opacity: 0, scale: 1.02 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-        >
-          <img
-            src={film.image}
-            alt={film.title}
-            className="film-details-image"
-          />
-        </motion.div>
-      )}
+{film.images && film.images.length > 0 && (
+  <motion.div
+    className="film-details-gallery"
+    initial={{ opacity: 0, y: 24 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
+  >
+    {film.images.map((image, index) => (
+      <motion.div
+        key={index}
+        className="film-details-imageWrap"
+        initial={{ opacity: 0, scale: 1.02 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.55 + index * 0.08,
+          ease: "easeOut",
+        }}
+      >
+        <img
+          src={image}
+          alt={`${film.title} still ${index + 1}`}
+          className="film-details-image"
+        />
+      </motion.div>
+    ))}
+  </motion.div>
+)}
 
-      <PitchDeck pitchPhotos={film.pitchPhotos} filmTitle={film.title} />
 
       {film.media && film.media.length > 0 && (
         <Media media={film.media} filmTitle={film.title} />

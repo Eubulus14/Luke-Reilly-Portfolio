@@ -7,6 +7,7 @@ const DoodleButton = ({
   children,
   className = "",
   external = false,
+  download
 }) => {
   const buttonClass = `doodle-button ${className}`.trim();
 
@@ -38,6 +39,7 @@ const DoodleButton = ({
         className={buttonClass}
         target="_blank"
         rel="noreferrer"
+        download={download}
       >
         {content}
       </a>

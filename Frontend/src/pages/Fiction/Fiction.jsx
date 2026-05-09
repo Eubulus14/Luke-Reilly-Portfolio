@@ -29,10 +29,10 @@ const Fiction = () => {
     <section className="fiction-page">
       <div className="fiction-header">
   <div className="fiction-title-row">
-    <h1 className="fiction-page-title">Fiction</h1>
+    <h1 className="fiction-page-title">Published Work</h1>
 
     <img
-      src="/images/mh2.png"
+      src="/images/mh7.png"
       alt=""
       className="fiction-header-marginalia"
       aria-hidden="true"

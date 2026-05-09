@@ -44,7 +44,7 @@ const ScriptReading = () => {
 
     <div className="script-reading-lowerMarginalia">
   <img
-    src="/images/mh1.png"
+    src="/images/margiv.png"
     alt=""
     className="script-reading-lowerMarginalia-image"
   />
@@ -127,26 +127,17 @@ const ScriptReading = () => {
   <p>Beth Hurst, Poet, Writer, Graduate of MSt in Creative Writing, University of Oxford</p>
 </div>
 
+<img
+    src="/images/margizig.png"
+    alt=""
+    aria-hidden="true"
+    className="script-reading-testimonialMarginalia"
+  />
+
 
   </motion.div>
 
-  <div className="script-reading-headBurst" aria-hidden="true">
-  <img
-    src="/images/head1.png"
-    alt=""
-    className="script-reading-headBurst-layer headBurst-layer1"
-  />
-  <img
-    src="/images/head2.png"
-    alt=""
-    className="script-reading-headBurst-layer headBurst-layer2"
-  />
-  <img
-    src="/images/head3.png"
-    alt=""
-    className="script-reading-headBurst-layer headBurst-layer3"
-  />
-</div>
+ 
 </div>
     </section>
   );

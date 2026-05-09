@@ -31,7 +31,15 @@ const filmsData = [
       ],
 
       media: [
-        
+        {
+          id: 1,
+          title: "The Top 10 Are In. Now the Judges Decide.",
+          excerpt:
+            "It’s 1850. Two explorers form an unlikely friendship as they search the Arctic for a missing expedition. But can their new bond survive the discovery of its terrible fate?",
+          image: "/images/kinolime.webp",
+          link: "https://www.kinolime.com/screenplays/prisoners-of-air",
+          buttonText: "Read/Vote on Kinolime",
+        },
       ],
 
       scriptImages: [
@@ -90,6 +98,10 @@ const filmsData = [
           alt: "Prisoners of Air pitch deck slide 7",
           caption: "Pitch deck excerpt — slide 7",
         },
+        { id: 8, image: "/images/p8.png", alt: "Prisoners of Air pitch deck slide 8" },
+        { id: 9, image: "/images/p9.png", alt: "Prisoners of Air pitch deck slide 9" },
+        { id: 10, image: "/images/p10.png", alt: "Prisoners of Air pitch deck slide 10" },
+        { id: 11, image: "/images/p11.png", alt: "Prisoners of Air pitch deck slide 11" },
       ],
 
 
@@ -99,6 +111,11 @@ const filmsData = [
           url: "https://www.kinolime.com/screenplays/prisoners-of-air?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
         },
       ],
+
+      scriptDownload: {
+        label: "Download the Script",
+        file: "/files/prisoners-of-air-script.pdf",
+      },
     },
     
     {
@@ -107,9 +124,9 @@ const filmsData = [
       subheading: "2026 · 32 min | Writer / Director",
   
       year: "2026",
-      runtime: "32 min",
+      runtime: "12 min",
       role: "Director",
-      genre: "Literary Adaptation",
+      genre: "Narrative / Experimental",
       format: "Short Film",
   
       credits: "Based on the poem by T. S. Eliot",
@@ -117,8 +134,14 @@ const filmsData = [
       description:
         "A cinematic interpretation of T. S. Eliot's iconic poem, exploring themes of alienation, self-consciousness, and the fragmented modern psyche.",
   
-      poster: "/images/lojap.jpeg",
-      image: "/images/lojap.jpeg",
+      poster: "/images/lojap1.jpeg",
+      images: ["/images/lojap1.jpeg",
+      "/images/lojap2.jpeg",
+      "/images/lojap3.jpeg",
+      "/images/lojap4.jpeg",
+      "/images/lojap5.jpeg",
+      "/images/lojap6.jpeg",
+    ],
 
       trailer: {
         
@@ -140,17 +163,22 @@ const filmsData = [
     
         year: "2025",
         runtime: "109 min",
-        role: "Writer / Director",
+        role: "Screenwriter",
         genre: "Drama",
         format: "Feature Film",
     
-        credits: "Starring Actor A, Actor B",
+        credits: "Sovereign Films and Scarlett Productions",
     
         description:
           "A brief synopsis of the film goes here. This can be a logline or a slightly longer paragraph describing the story, themes, or production context of the project.",
     
-        poster: "/images/small-gods.png",
-        image: "/images/small-gods.png",
+        poster: "/images/small-gods1.png",
+
+        images: ["/images/small-gods1.png",
+        "/images/small-gods2.png",
+        "/images/small-gods3.png",
+        "/images/small-gods4.png"],
+        
 
         trailer: {
             cloudflareId: "c049d08d9ed0cf843851dab095d0fc10",
@@ -174,7 +202,7 @@ const filmsData = [
               id: 3,
               image: "/images/mff.jpeg",
               alt: "2026 Selection",
-              label: "2026 Selection"
+              label: "2026 Selection, Winner of Best Director"
             },
             {
               id: 4,
@@ -247,20 +275,26 @@ const filmsData = [
       
         year: "2021",
         runtime: "16 min",
-        role: "Writer / Director / Editing / Sound",
+        role: "Writer / Codirector / Editing / Sound / Actor",
         genre: "Drama / Thriller",
-        format: "Feature Film",
+        format: "Short Film",
       
-        credits: "Produced by Production Company",
+        credits: "Produced by Scarlett Productions",
       
         description:
           "A short description of the film. This can describe the premise, thematic concerns, or notable collaborators involved in the project.",
       
-        poster: "/images/meat.png",
-        image: "/images/meat.png",
+        poster: "/images/meat1.png",
+        images: [
+          "/images/meat1.png",
+          "/images/meat2.png",
+          "/images/meat3.png",
+          "/images/meat4.png",
+          "/images/meat5.png",
+        ],
 
         trailer: {
-            cloudflareId: "2dba4932447ad0a3dafe3d94808f1939",
+            cloudflareId: "71e89da05f0b8c2918c801c9c0f93f28",
             poster: "/images/meat.png",
           },
 
@@ -317,9 +351,27 @@ const filmsData = [
             id: 2,
             title: "Organization for Identity + Cultural Development; Screening and Director's Q & A",
             excerpt:
-            "'On 28 January I had the honour of being invited to an online screening of the short movie Nyama. The event was organised by Survival International and was followed by a Q&A session with the directors and the actors. Nyama is somewhat of a teaser of a larger film project called Small Gods, both directed by Asher Rosen and Ezra Mugisha. '",
+            "'Meat - An award winning short film depicting the struggles of the Ugandan Batwa indigenous group.'",
             image: "/images/ICD.png",
+            link: "https://identity-arts-change.divhunt.art/workshop",
+            buttonText: "Read full article",
+          },
+          {
+            id: 3,
+            title: "Organization for Identity + Cultural Development; Screening and Director's Q & A",
+            excerpt:
+            "'On 28 January I had the honour of being invited to an online screening of the short movie Nyama. The event was organised by Survival International and was followed by a Q&A session with the directors and the actors. Nyama is somewhat of a teaser of a larger film project called Small Gods, both directed by Asher Rosen and Ezra Mugisha. '",
+            image: "/images/sellheim.png",
             link: "https://sellheimenvironmental.org/2022/02/04/nyama-an-impressive-short-movie-about-the-conflict-between-livelihoods-conservation-and-tourism/",
+            buttonText: "Read full article",
+          },
+          {
+            id: 4,
+            title: "The theft of indigenous lands and the circus of white tourism in Africa",
+            excerpt:
+            "'The short film 'Nyama' tells the story of the expulsion of the Batwa community from protected territories in Uganda in the name of environmental conservation and criticizes the condescension of foreigners.'",
+            image: "/images/elpais.jpg",
+            link: "https://elpais.com/planeta-futuro/africa-no-es-un-pais/2022-02-09/el-turismo-blanco-en-africa-y-el-hacer-de-la-pobreza-un-circo.html",
             buttonText: "Read full article",
           },
         ],

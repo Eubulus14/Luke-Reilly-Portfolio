@@ -6,46 +6,52 @@ const Contact = () => {
   return (
     <section className="contact-page">
       <motion.div
-  className="contact-header"
-  initial={{ opacity: 0, y: 24 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.7, ease: "easeOut" }}
->
-  <div className="contact-header-inner">
-    
-    {/* LEFT: text */}
-    <div className="contact-header-text">
-  <p className="contact-kicker">Contact</p>
+        className="contact-header"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="contact-header-inner">
+          <div className="contact-header-text">
+            <p className="contact-kicker">Contact</p>
 
-  <div className="contact-title-row">
-    <h1 className="contact-title">Luke Reilly</h1>
+            <div className="contact-title-row">
+              <h1 className="contact-title">Luke Reilly</h1>
+            </div>
 
-    
-    <div className="contact-title-arrows">
-  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-one" />
-  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-two" />
-  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-three" />
-  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-four" />
-  <img src="/images/down-arrow.png" alt="" className="contact-title-arrow arrow-five" />
-</div>
-  </div>
-</div>
+            <img
+            className="contact-marginalia contact-marginalia-title"
+            src="/images/margi3.png"
+            alt=""
+            aria-hidden="true"
+          />
+          </div>
 
-    {/* RIGHT: images */}
-    <div className="contact-header-images">
-      <div className="contact-header-imageBlock">
-        <img src="/images/at-amaas2.jpeg" alt="At the Africa Movie Academy Awards" />
-        <p>At the Africa Movie Academy Awards (Africa's Biggest Film Festival) for Small Gods</p>
-      </div>
+          <div className="contact-header-images">
+            <div className="contact-header-imageBlock">
+              <img
+                src="/images/at-amaas2.jpeg"
+                alt="At the Africa Movie Academy Awards"
+              />
+              <p>
+                At the Africa Movie Academy Awards (Africa&apos;s Biggest Film
+                Festival) for Small Gods
+              </p>
+            </div>
 
-      <div className="contact-header-imageBlock">
-        <img src="/images/sg-premier.jpeg" alt="At the Small Gods Premier" />
-        <p>At the Small God's Premier</p>
-      </div>
-
-    </div>
-  </div>
-</motion.div>
+            <div className="contact-header-imageBlock">
+              <img
+                src="/images/sg-premier.jpeg"
+                alt="At the Small Gods premiere"
+              />
+              <p>
+                Small Gods&apos; Premiere at the Historic The Poly at Cinema,
+                Falmouth
+              </p>
+            </div>
+          </div>
+        </div>
+      </motion.div>
 
       <div className="contact-grid">
         <motion.div
@@ -120,48 +126,50 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
+
       <div className="contact-form-section">
-  <div className="contact-form-wrapper">
-    <ContactForm />
-  </div>
+        <div className="contact-form-wrapper">
+          <ContactForm />
 
-  <div className="contact-form-images">
-    <div className="contact-form-imageBlock">
-      <img src="/images/at-cff.jpeg" alt="At the Cornwall Film Festival" />
-      <p>At the Cornwall Film Festival, for Small Gods 2025</p>
-    </div>
+          <img
+          className="contact-marginalia contact-marginalia-form"
+          src="/images/margi4.png"
+          alt=""
+          aria-hidden="true"
+        />
+        </div>
 
-    <div className="contact-form-imageBlock">
-      <img src="/images/amaa-performance.jpeg" alt="AMAA Performance" />
-      <p>A Performance at the Africa Movie Academy Awards 2025</p>
-    </div>
-  </div>
-</div>
+        <div className="contact-form-images">
+          <div className="contact-form-imageBlock">
+            <img src="/images/manchester3.jpeg" alt="At the Manchester Film Festival" />
+            <p>At the Manchester Film Festival</p>
+          </div>
 
-<motion.div
-  className="contact-bottom-gallery"
-  initial={{ opacity: 0, y: 24 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.2 }}
-  transition={{ duration: 0.7, ease: "easeOut" }}
->
-  <div className="contact-bottom-imageBlock contact-bottom-imageBlock-large">
-    <img src="/images/manchester1.jpeg" alt="Description here" />
-    <p>At the Manchester Film Festival</p>
-  </div>
+          <div className="contact-form-imageBlock">
+            <img src="/images/amaa-performance.jpeg" alt="AMAA performance" />
+            <p>A Performance at the Africa Movie Academy Awards 2025</p>
+          </div>
+        </div>
+      </div>
 
-  <div className="contact-bottom-imageBlock">
-    <img src="/images/manchester2.jpeg" alt="Description here" />
-    <p>At the Manchester Film Festival</p>
-  </div>
+      <motion.div
+        className="contact-bottom-gallery"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="contact-bottom-imageBlock contact-bottom-imageBlock-wide">
+          <img src="/images/manchester2.jpeg" alt="Giving a Q and A at the Manchester Film Festival" />
+          <p>Giving a Q &amp; A at the Manchester Film Festival</p>
+        </div>
 
-  <div className="contact-bottom-imageBlock">
-    <img src="/images/manchester3.jpeg" alt="Description here" />
-    <p>At the Manchester Film Festival</p>
-  </div>
-</motion.div>
+        <div className="contact-bottom-imageBlock">
+          <img src="/images/at-cff.jpeg" alt="At the Cornwall Film Festival" />
+          <p>At the Cornwall Film Festival, for Small Gods 2025</p>
+        </div>
+      </motion.div>
     </section>
-    
   );
 };
 

@@ -5,17 +5,6 @@
   padding: 140px 48px 80px;
 }
 
-.fiction-header {
-  max-width: 1400px;
-  margin-bottom: 90px;
-}
-
-.fiction-title-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 32px;
-}
 
 .fiction-page-title {
   margin: 0;
@@ -26,14 +15,39 @@
   flex: 0 0 auto;
 }
 
+.fiction-header {
+  position: relative;
+  max-width: 1400px;
+  margin-bottom: 90px;
+  overflow: visible;
+}
+
+.fiction-title-row {
+  position: relative;
+  z-index: 2;
+}
+
+.fiction-page-title,
+.fiction-page-intro {
+  position: relative;
+  z-index: 3;
+}
+
 .fiction-header-marginalia {
-  width: min(50vw, 800px);
+  position: absolute;
+  width: clamp(560px, 56vw, 980px);
+  top: -125px;
+  right: -40px;
 
-  opacity: 0.12; /* more ghosted */
+  opacity: 0.18;
+  mix-blend-mode: lighten;
+  filter: blur(0.4px);
 
-  transform: translateY(-80px) translateX(20px); /* MUCH higher + slight drift */
-
-  pointer-events: none; /* makes it feel like background */
+  transform: rotate(4deg);
+  pointer-events: none;
+  user-select: none;
+  max-width: none;
+  z-index: 1;
 }
 
 .fiction-page-intro {

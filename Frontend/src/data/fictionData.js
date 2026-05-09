@@ -4,13 +4,13 @@ const fictionData = [
         title: "Interval",
         genre: "Ghost Story",
         medium: "//Featured in the Short Story Collection",
-        publication: "BUOY",
+        publication: "BUOY PRESS",
         excerpt:
         "This collection of 11 short stories responding to the theme Carnival at the End of the World was guest edited by Harper Walton. \n People metamorphose into birds, vows of silence become clown eras, hallucinogenic visions are plentiful, language and form disintegrates and evolves, drugs unlock psychogeography, sex and gender fluctuate and threaten to explode, bodies open and close, toilet queues stretch on for infinity, and streams of consciousness are polluted.",
         link: "https://buoypress.sumupstore.com/product/carnival-at-the-end-of-the-world",
         linkLabel: "View Collection",
         image: "/images/carnival.png",
-        date: "2023",
+        date: "2024",
       },
       {
         slug: "fag-break",
@@ -29,11 +29,11 @@ const fictionData = [
       slug: "cat-food",
       title: "Cat Food",
       genre: "Fiction",
-      medium: "//Short Fiction",
-      publication: "Published as Part of an Email Subscription Service Showcasing the Work of Up and Coming Writers: Campfire 17",
+      medium: "//Literary Magazine",
+      publication: "Published as Part of Campfire 17",
       
       image: "/images/cat-food.png",
-      date: "2025",
+      date: "2024",
     },
     
     {

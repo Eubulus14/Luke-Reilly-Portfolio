@@ -34,14 +34,14 @@ const Films = () => {
     <section className="films-page">
       {filmsData.map((film) => (
         <MoviePoster
-        key={film.slug}
-        title={film.title}
-        subheading={film.subheading}
-        image={film.image}
-        link={`/films/${film.slug}`}
-        buttonText="View"
-        accolades={film.accolades}
-      />
+          key={film.slug}
+          title={film.title}
+          subheading={film.subheading}
+          image={film.images?.[0] || film.image}
+          link={`/films/${film.slug}`}
+          buttonText="View"
+          accolades={film.accolades}
+        />
       ))}
     </section>
   );
