@@ -26,8 +26,8 @@
 
 .pitch-deck-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
   align-items: start;
 }
 
@@ -35,73 +35,8 @@
   margin: 0;
 }
 
-/* More uniform collage layout */
-/* COLLAGE LAYOUT */
-
-.pitch-deck-item-1 {
-  grid-column: span 3;
-  margin-top: 0;
-  transform: scale(1.02);
-}
-
-.pitch-deck-item-2 {
-  grid-column: span 3;
-  margin-top: 44px;
-  transform: scale(0.96);
-}
-
-.pitch-deck-item-3 {
-  grid-column: span 3;
-  margin-top: -12px;
-  transform: scale(1.04);
-}
-
-.pitch-deck-item-4 {
-  grid-column: span 3;
-  margin-top: 36px;
-  transform: scale(1);
-}
-
-.pitch-deck-item-5 {
-  grid-column: span 2;
-  margin-top: 58px;
-  transform: scale(0.92);
-}
-
-.pitch-deck-item-6 {
-  grid-column: span 4;
-  margin-top: -18px;
-  transform: scale(1.03);
-}
-
-.pitch-deck-item-7 {
-  grid-column: span 3;
-  margin-top: 40px;
-  transform: scale(0.98);
-}
-
-.pitch-deck-item-8 {
-  grid-column: span 3;
-  margin-top: -26px;
-  transform: scale(1.06);
-}
-
-.pitch-deck-item-9 {
-  grid-column: span 2;
-  margin-top: 20px;
-  transform: scale(0.9);
-}
-
-.pitch-deck-item-10 {
-  grid-column: span 4;
-  margin-top: 54px;
-  transform: scale(1.02);
-}
-
-.pitch-deck-item-11 {
-  grid-column: span 6;
-  margin-top: 8px;
-  transform: scale(1.01);
+.pitch-deck-imageWrap {
+  overflow: hidden;
 }
 
 .pitch-deck-image {
@@ -120,53 +55,6 @@
   opacity: 0.92;
 }
 
-/* subtle collage rotation */
-/* ORGANIC ROTATION */
-
-.pitch-deck-item-1 .pitch-deck-imageWrap {
-  transform: rotate(-1.2deg);
-}
-
-.pitch-deck-item-2 .pitch-deck-imageWrap {
-  transform: rotate(1.6deg);
-}
-
-.pitch-deck-item-3 .pitch-deck-imageWrap {
-  transform: rotate(-0.7deg);
-}
-
-.pitch-deck-item-4 .pitch-deck-imageWrap {
-  transform: rotate(0.9deg);
-}
-
-.pitch-deck-item-5 .pitch-deck-imageWrap {
-  transform: rotate(-2deg);
-}
-
-.pitch-deck-item-6 .pitch-deck-imageWrap {
-  transform: rotate(0.4deg);
-}
-
-.pitch-deck-item-7 .pitch-deck-imageWrap {
-  transform: rotate(-1.4deg);
-}
-
-.pitch-deck-item-8 .pitch-deck-imageWrap {
-  transform: rotate(1.1deg);
-}
-
-.pitch-deck-item-9 .pitch-deck-imageWrap {
-  transform: rotate(-2.2deg);
-}
-
-.pitch-deck-item-10 .pitch-deck-imageWrap {
-  transform: rotate(0.8deg);
-}
-
-.pitch-deck-item-11 .pitch-deck-imageWrap {
-  transform: rotate(-0.5deg);
-}
-
 @media (max-width: 900px) {
   .pitch-deck {
     margin: 72px 0 80px;
@@ -175,24 +63,5 @@
   .pitch-deck-grid {
     grid-template-columns: 1fr;
     gap: 32px;
-  }
-
-  .pitch-deck-item-1,
-  .pitch-deck-item-2,
-  .pitch-deck-item-3,
-  .pitch-deck-item-4,
-  .pitch-deck-item-5,
-  .pitch-deck-item-6,
-  .pitch-deck-item-7,
-  .pitch-deck-item-8,
-  .pitch-deck-item-9,
-  .pitch-deck-item-10,
-  .pitch-deck-item-11 {
-    grid-column: span 1;
-    margin-top: 0;
-  }
-
-  .pitch-deck-imageWrap {
-    transform: none !important;
   }
 }

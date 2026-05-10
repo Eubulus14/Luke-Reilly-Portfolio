@@ -11,8 +11,13 @@ const filmsData = [
       format: "Short Film",
   
   
-      description:
+      description: [
         "It’s 1850. Two explorers form an unlikely friendship as they search the Arctic for a missing expedition. But can their new bond survive the discovery of its terrible fate?",
+      
+        "Inspired by a lifelong obsession with Arctic exploration, Prisoners combines Survival horror with the buddy movie in order to depict both the absurdity and beauty of platonic male love.",
+      
+        "Still in development, the script was recently shortlisted for the Kinolime Feature Screenplay Competition from a slew of 2,500 entries.",
+      ],
   
       poster: "/images/prisoners-of-air.png",
       image: "/images/prisoners-of-air.png",
@@ -131,8 +136,13 @@ const filmsData = [
   
       credits: "Based on the poem by T. S. Eliot",
   
-      description:
-        "On a late summer's evening, a middle-aged man is overwhelmed with anxiety when attempting to leave his house. An adaption of the TS Eliot poem, starring Titanic's Jonny Phillips.",
+      description: [
+        "On a late summer’s afternoon, a middle-aged man is overwhelmed with anxiety when attempting to leave the house. An adaption of the TS Eliot poem starring Jonny Phillips (Titanic, Bronson).",
+      
+        "An attempt to breathe new life into Eliot’s masterpiece by combining poetic dialogue with the cinematic tradition of stripped-back, British realism, the project is deeply personal.",
+      
+        "Shot on location in a home that belonged to my late grandparents for 67 years, the film is now the only living record of how it used to look.",
+      ],
   
       poster: "/images/lojap1.jpeg",
       images: ["/images/lojap1.jpeg",
@@ -141,6 +151,9 @@ const filmsData = [
       "/images/lojap4.jpeg",
       "/images/lojap5.jpeg",
       "/images/lojap6.jpeg",
+      "/images/lojap7.jpeg",
+      "/images/lojap8.jpeg",
+      "/images/lojap9.jpeg",
     ],
 
       trailer: {
@@ -151,7 +164,15 @@ const filmsData = [
       ],
 
       media: [
-       
+        {
+          id: 1,
+          title: "Brittish Council",
+          excerpt:
+            "'Jonny Phillips plays Alfred - or a man remembering the stream of consciousness poem - as he prepares to leave his home for an evening out. Based on the poem by T.S Eliot, adapted by Luke Reilly.'",
+          image: "/images/bc.png",
+          link: "https://filmsandfestivals.britishcouncil.org/projects/the-lovesong-of-alfred-j-prufrock",
+          buttonText: "Read full article",
+        },
       ],
     },
   
@@ -162,15 +183,21 @@ const filmsData = [
         subheading: "2025 · 109 min | Screenwriter",
     
         year: "2025",
-        runtime: "109 min",
+        runtime: "106 min",
         role: "Screenwriter",
         genre: "Drama",
         format: "Feature Film",
     
-        credits: "Sovereign Films and Scarlet Productions",
+        credits: "Sovereign Films and Scala Productions",
     
-        description:
-          ""
+        description: [
+          "While struggling to provide for her son, an indigenous single mother falls in love with a charismatic street performer. But when a crisis strikes, it threatens to destroy their young family.",
+        
+          "Based on the lives of its two lead actors, Bizimana Hussain and Chimpaye Florence Mariserena, and written with their input, Small Gods depicts the daily struggle of life as an indigenous minority in Uganda.",
+        
+          "Forced to dance and sing to Western tourists for pocket change, the film aims to expose the tragic reality behind cultural tourism – a reality I witnessed myself when living in the country for a year.",
+        ],
+
         poster: "/images/small-gods1.png",
 
         images: ["/images/small-gods1.png",
@@ -264,24 +291,48 @@ const filmsData = [
               link: "https://www.instagram.com/smallgodsfilm/",
               buttonText: "Read full article",
             },
+            {
+              id: 6,
+              title: "Brittish Council",
+              excerpt:
+              "'While struggling to provide for her son, a landless single mother falls in love with a charismatic street performer. But when a crisis strikes, it threatens to destroy their young family.'",
+              image: "/images/bc.png",
+              link: "https://filmsandfestivals.britishcouncil.org/projects/small-gods",
+              buttonText: "Read full article",
+            },
+            {
+              id: 7,
+              title: "Brittish Council",
+              excerpt:
+              "'The American Black Film Festival has unveiled the competition lineup for its 30th-anniversary edition, with highly anticipated projects including [...]'",
+              image: "/images/variety.webp",
+              link: "https://variety.com/2026/film/festivals/american-black-film-fest-2026-lineup-jamie-foxx-marsai-martin-1236711270/",
+              buttonText: "Read full article",
+            },
           ],
       },
   
     {
         slug: "meat",
         title: "MEAT",
+        subtitleTitle: "(also known by its Rufumbira title, ‘Nyama’)",
         subheading: "2021 · 16 min | Writer / Co-Director",
       
         year: "2021",
-        runtime: "16 min",
+        runtime: "15 min",
         role: "Writer / Codirector (Also Editing / Sound / Actor)",
         genre: "Drama / Thriller",
         format: "Short Film",
       
-        credits: "Produced by Scarlett Productions",
+        credits: "Produced by Scala Productions",
       
-        description:
-          "A short description of the film. This can describe the premise, thematic concerns, or notable collaborators involved in the project.",
+        description: [
+          "An indigenous woman is forcibly removed from her rainforest home. Unable to provide for her son, she must consider the ultimate humiliation; performing for Western tourists in order to survive.",
+        
+          "Shot during the Covid pandemic on a small budget and made in close collaboration with local filmmakers, Meat aimed to expose a little-known human rights abuse.",
+        
+          "Having lived in Uganda for a year, the film was designed to challenge the misconception that so many visitors to the country are left with; that the Batwa’s story is a happy one and their removal was necessary for wildlife conservation.",
+        ],
       
         poster: "/images/meat1.png",
         images: [

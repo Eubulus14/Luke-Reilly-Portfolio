@@ -62,31 +62,20 @@ const Contact = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <p>
-            Luke Reilly is a screenwriter, director and published short story
-            writer whose co-directed short film debut, Meat, was produced by
-            Scala Productions and shot in Uganda. It was selected for the César
-            Académie’s Golden Nights Programme, Slamdance, and won Best Short at
-            the 2021 AMAAs (Africa’s biggest film awards). It was officially
-            endorsed by UNESCO and Survival International.
-          </p>
+  Luke Reilly is an award-winning screenwriter and director who has been creating work which is satirical, darkly humorous, haunting and heartfelt for over half a decade. His films, scripts and short stories have spanned subjects as diverse as cultural tourism, poverty, existential poetry and period horror.
+</p>
 
-          <p>
-            Luke followed this up with his screenplay, Small Gods, funded by
-            Sovereign Films (known for Triangle of Sadness), which received nine
-            nominations at the 2025 AMAAs and won Best Feature at the
-            BIFA-qualifying Cornwall Film Festival. It is set for a cinema
-            release this year.
-          </p>
+<p>
+  After a formative year spent teaching English in Uganda, he made his screenwriting debut with the short film, <em>Meat</em>, which was produced by Scala Productions in 2021 and created in close collaboration with a Ugandan cast and crew. The film was selected for the César Académie’s Golden Nights Programme, Slamdance, won Best Short at the 2021 AMAAs (Africa’s biggest film awards) and was officially endorsed by both UNESCO and Survival International.
+</p>
 
-          <p>
-            His writer-director debut, The Love Song of J Alfred Prufrock, is
-            set to be released this year and stars Titanic’s Jonny Phillips. His
-            fiction has appeared online and in print in Ink, Sweat and Tears,
-            Buoy Press and Firewords. He also writes essays online under the
-            search-optimisable but pretentious synonym, Eubulus Kane, and has
-            completed a screenplay about Arctic explorers with big, bushy
-            beards.
-          </p>
+<p>
+  Luke followed this up with his full-length screenplay, <em>Small Gods</em>, which expanded on <em>Meat</em>’s themes and was funded by Sovereign Films (known for <em>Triangle of Sadness</em>). It won Best Feature at the BIFA-qualifying Cornwall Film Festival, Best Director at Beijing International Film Festival, Best Actress at the 2025 AMAAs. It is set for a cinema release this year.
+</p>
+
+<p>
+  His writer-director debut, <em>The Love Song of J Alfred Prufrock</em>, stars <em>Titanic</em>’s Jonny Phillips and is currently being submitted to festivals. His latest screenplay, <em>Prisoners of Air</em>, was shortlisted for the Kinolime Feature Screenplay Competition out of 2,500 entries. His fiction has been published by literary magazines such as <em>Ink, Sweat and Tears</em>, <em>Buoy Press</em> and <em>Firewords</em>. He also writes essays online under the search-optimisable but pretentious synonym, <em>Eubulus Kane</em>. Please peruse his mind at your pleasure.
+</p>
         </motion.div>
 
         <motion.div
@@ -165,8 +154,8 @@ const Contact = () => {
         </div>
 
         <div className="contact-bottom-imageBlock">
-          <img src="/images/at-cff.jpeg" alt="At the Cornwall Film Festival" />
-          <p>At the Cornwall Film Festival, for Small Gods 2025</p>
+          <img src="/images/sgl.jpeg" alt="Small Gods' London premiere at the British Urban Fillm Awards, Genesis cinema" />
+          <p>Small Gods' London premiere at the British Urban Fillm Awards, Genesis cinema</p>
         </div>
       </motion.div>
     </section>

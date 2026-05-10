@@ -31,8 +31,8 @@ const ScriptReading = () => {
 </h1>
 
     <p className="script-reading-intro">
-      I offer detailed script feedback for writers and directors working
-      on short films, features.
+      I offer detailed script feedback for writers working
+      on short films and features.
       Whether you need structural notes, thematic guidance, or a sharper
       sense of what the piece is doing, the aim is always to help the
       work become more precise, compelling, and alive.
@@ -86,10 +86,10 @@ const ScriptReading = () => {
           <p>
             You send the script along with a
             short note about where the project is at and what kind of feedback
-            would be most useful.
+            would be most useful. 
           </p>
           <p>
-            I will set up a thirty minute call, and then respond with a written set of notes focused on both the
+            We will have a thirty minute call and a chat. I will then go away and respond with a written set of notes focused on both the
             larger structural picture and the finer details of the writing.
           </p>
           <p>
@@ -99,43 +99,54 @@ const ScriptReading = () => {
       </motion.div>
 
       <div className="script-reading-testimonialRow">
-  <motion.div
-    className="script-reading-testimonial"
-    initial={{ opacity: 0, y: 24 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-  >
-   <div className="script-reading-testimonialItem">
-  <blockquote>
-    "Luke provided the kind of feedback you can only get from someone who’s a talented screenwriter themselves. It can often seem like readers aren’t meeting you at your level, and don’t truly make the effort to understand your material - but that was far from my experience here. Luke doesn’t just try to transform your work, but has made the painstaking effort to consider it from as many angles as possible, in the hopes of getting you closer to something you’re happy with. This industry direly needs more talented artists like Luke doing this work!"
-  </blockquote>
-  <p>Alex Fernandes, Script Consultant, Producer, Screenwriter</p>
-</div>
+      <motion.div
+  className="script-reading-testimonial"
+  initial={{ opacity: 0, y: 24 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+>
+  <div className="script-reading-testimonialHeader">
+    <p>Testimonials</p>
+    <h2>What Writers Say</h2>
+  </div>
 
-<div className="script-reading-testimonialItem">
-  <blockquote>
-    “Luke Reilly has provided valuable feedback for my writing which improved my work across a variety of mediums. As an award-nominated screenwriter, his opinion is trustworthy and his industry insight is important for those aiming to make the next steps in their professional creative practice. I highly recommend this service.”
-  </blockquote>
-  <p>Harper Walton, Author of <em>Midnight Movies</em></p>
-</div>
+  <div className="script-reading-testimonialColumns">
+    <div className="script-reading-testimonialColumn">
+      <div className="script-reading-testimonialItem">
+        <blockquote>
+          "Luke provided the kind of feedback you can only get from someone who’s a talented screenwriter themselves. It can often seem like readers aren’t meeting you at your level, and don’t truly make the effort to understand your material - but that was far from my experience here. Luke doesn’t just try to transform your work, but has made the painstaking effort to consider it from as many angles as possible, in the hopes of getting you closer to something you’re happy with. This industry direly needs more talented artists like Luke doing this work!"
+        </blockquote>
+        <p>Alex Fernandes, Script Consultant, Producer, Screenwriter</p>
+      </div>
+    </div>
 
-<div className="script-reading-testimonialItem">
-  <blockquote>
-    "Luke gives insightful, detailed feedback on creative work. He can give broad, structural feedback as well as line edit notes that really helped me shape my work."
-  </blockquote>
-  <p>Beth Hurst, Poet, Writer, Graduate of MSt in Creative Writing, University of Oxford</p>
-</div>
+    <div className="script-reading-testimonialColumn">
+      <div className="script-reading-testimonialItem">
+        <blockquote>
+          “Luke Reilly has provided valuable feedback for my writing which improved my work across a variety of mediums. As an award-nominated screenwriter, his opinion is trustworthy and his industry insight is important for those aiming to make the next steps in their professional creative practice. I highly recommend this service.”
+        </blockquote>
+        <p>Harper Walton, Author of <em>Midnight Movies</em></p>
+      </div>
+    </div>
 
-<img
+    <div className="script-reading-testimonialColumn">
+      <div className="script-reading-testimonialItem">
+        <blockquote>
+          "Luke gives insightful, detailed feedback on creative work. He can give broad, structural feedback as well as line edit notes that really helped me shape my work."
+        </blockquote>
+        <p>Beth Hurst, Poet, Writer, Graduate of MSt in Creative Writing, University of Oxford</p>
+      </div>
+    </div>
+  </div>
+
+  <img
     src="/images/margizig.png"
     alt=""
     aria-hidden="true"
     className="script-reading-testimonialMarginalia"
   />
-
-
-  </motion.div>
+</motion.div>
 
  
 </div>

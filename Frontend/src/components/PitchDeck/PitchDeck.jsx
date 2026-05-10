@@ -13,25 +13,22 @@ const PitchDeck = ({ pitchPhotos = [], filmTitle = "Film" }) => {
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
       <div className="pitch-deck-header">
-        <p className="pitch-deck-kicker">Pitch Deck</p>
-        <h2 className="pitch-deck-title">Selected Visual Materials</h2>
+        <h2 className="pitch-deck-title">Read the Pitch Deck Below</h2>
       </div>
 
       <div className="pitch-deck-grid">
         {pitchPhotos.map((photo, index) => (
           <motion.figure
-            key={photo.id}
-            className={`pitch-deck-item pitch-deck-item-${(index % 11) + 1}`}
+            key={photo.id || index}
+            className="pitch-deck-item"
             initial={{
               opacity: 0,
               y: 28,
-              rotate: index % 2 === 0 ? -1.2 : 1.2,
-              scale: 0.96,
+              scale: 0.98,
             }}
             whileInView={{
               opacity: 1,
               y: 0,
-              rotate: 0,
               scale: 1,
             }}
             viewport={{ once: true, amount: 0.18 }}

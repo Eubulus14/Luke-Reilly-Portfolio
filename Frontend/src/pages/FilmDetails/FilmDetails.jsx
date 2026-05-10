@@ -77,7 +77,16 @@ const FilmDetails = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1 className="film-details-title">{film.title}</h1>
+        <h1 className="film-details-title">
+          {film.title}
+
+          {film.subtitleTitle && (
+            <span className="film-details-title-secondary">
+              {" "}
+              {film.subtitleTitle}
+            </span>
+          )}
+        </h1>
 
         {hasValue(film.subheading) && (
           <p className="film-details-subheading">{film.subheading}</p>
@@ -159,16 +168,22 @@ const FilmDetails = () => {
         </motion.div>
       )}
 
-      {hasValue(film.description) && (
-        <motion.div
-          className="film-details-description"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
-        >
+    {film.description && (
+      <motion.div
+        className="film-details-description"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
+      >
+        {Array.isArray(film.description) ? (
+          film.description.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))
+        ) : (
           <p>{film.description}</p>
-        </motion.div>
-      )}
+        )}
+      </motion.div>
+    )}
 
 <PitchDeck pitchPhotos={film.pitchPhotos} filmTitle={film.title} />
 
@@ -186,7 +201,7 @@ const FilmDetails = () => {
       download
       className="film-details-doodleLink"
     >
-      {film.scriptDownload.label || "Download the Script"}
+      {film.scriptDownload.label || "Download the Treatment"}
     </DoodleButton>
   </motion.div>
 )}
