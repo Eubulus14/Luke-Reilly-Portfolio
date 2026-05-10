@@ -1,7 +1,6 @@
 import "./Media.css";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
 import DoodleButton from "../DoodleButton/DoodleButton";
 
 const Media = ({ media = [], filmTitle = "" }) => {
@@ -35,7 +34,10 @@ const Media = ({ media = [], filmTitle = "" }) => {
         </div>
       </div>
 
-      <div className="media-right">
+      <div
+        className="media-right"
+        style={{ "--media-bg": `url(${activeItem.image})` }}
+      >
         <AnimatePresence mode="wait">
           <motion.div
             key={activeItem.id || activeIndex}
@@ -45,21 +47,23 @@ const Media = ({ media = [], filmTitle = "" }) => {
             exit={{ opacity: 0, y: -18 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
-            <p className="media-kicker">Media</p>
+            
+
+           
 
             <h2 className="media-title">{activeItem.title}</h2>
 
             <p className="media-excerpt">{activeItem.excerpt}</p>
 
             {activeItem.link && (
-  <DoodleButton
-    href={activeItem.link}
-    external={true}
-    className="media-button"
-  >
-    {activeItem.buttonText || "Read full article"}
-  </DoodleButton>
-)}
+              <DoodleButton
+                href={activeItem.link}
+                external={true}
+                className="media-button"
+              >
+                {activeItem.buttonText || "Read full article"}
+              </DoodleButton>
+            )}
           </motion.div>
         </AnimatePresence>
       </div>

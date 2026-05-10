@@ -31,7 +31,7 @@ const fictionData = [
       genre: "Fiction",
       medium: "//Short Story",
       publication: "Published in Firewords as Part of Campfire 17",
-      
+      excerpt: "Frances lowered herself down the frayed carpets of her staircase dressed in her dead husband’s winter coat. She felt, foot-first, through a nagging dark she’d refused for weeks to wash out with light. Lowering herself, toe by arthritic toe, foot by aching foot, into the space she could see in her mind’s eye only.",
       image: "/images/cat-food.png",
       date: "2024",
     },

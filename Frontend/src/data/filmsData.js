@@ -173,6 +173,15 @@ const filmsData = [
           link: "https://filmsandfestivals.britishcouncil.org/projects/the-lovesong-of-alfred-j-prufrock",
           buttonText: "Read full article",
         },
+        {
+          id: 2,
+          title: "Raymond Tallis, Author and Philosopher",
+          excerpt:
+            "It is extraordinary. I am so familiar with Prufrock...and you have unpeeled the patina of familiarity. I hear it as I used to hear it when I was first overwhelmed by it.",
+          image: "/images/tallis.avif",
+          
+          buttonText: "Read full article",
+        },
       ],
     },
   
