@@ -45,7 +45,7 @@ const Contact = () => {
                 alt="At the Small Gods premiere"
               />
               <p>
-                Small Gods&apos; Premiere at the Historic The Poly at Cinema,
+                Small Gods&apos; Premiere at the Historic The Poly Cinema,
                 Falmouth
               </p>
             </div>
@@ -74,7 +74,7 @@ const Contact = () => {
 </p>
 
 <p>
-  His writer-director debut, <em>The Love Song of J Alfred Prufrock</em>, stars <em>Titanic</em>’s Jonny Phillips and is currently being submitted to festivals. His latest screenplay, <em>Prisoners of Air</em>, was shortlisted for the Kinolime Feature Screenplay Competition out of 2,500 entries. His fiction has been published by literary magazines such as <em>Ink, Sweat and Tears</em>, <em>Buoy Press</em> and <em>Firewords</em>. He also writes essays online under the search-optimisable but pretentious synonym, <em>Eubulus Kane</em>. Please peruse his mind at your pleasure.
+  His writer-director debut, <em>The Love Song of J Alfred Prufrock</em>, stars <em>Titanic</em>’s Jonny Phillips and is currently being submitted to festivals. His latest screenplay, <em>Prisoners of Air</em>, was shortlisted for the Kinolime Feature Screenplay Competition out of 2,500 entries. His fiction has been published by literary magazines such as <em>Ink, Sweat and Tears</em>, <em>Buoy Press</em> and <em>Firewords</em>. He also writes essays online under the search-optimisable but pretentious synonym, <em>Eubulus Kane</em>. Browse at will!
 </p>
         </motion.div>
 
@@ -93,26 +93,16 @@ const Contact = () => {
           <div className="contact-block">
             <h2>Instagram</h2>
             <a
-              href="https://instagram.com/"
+              href="https://www.instagram.com/eubulus_kane/reels/"
               target="_blank"
               rel="noreferrer"
             >
-              @lukereilly
+              @eubulus_kane
             </a>
           </div>
 
-          <div className="contact-block">
-            <h2>Representation</h2>
-            <p>Representation details here if relevant.</p>
-          </div>
+          
 
-          <div className="contact-block">
-            <h2>Availability</h2>
-            <p>
-              Open to directing work, screenwriting projects, script reading,
-              and selected collaborations.
-            </p>
-          </div>
         </motion.div>
       </div>
 
