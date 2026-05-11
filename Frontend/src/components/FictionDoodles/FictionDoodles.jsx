@@ -57,6 +57,20 @@ function getTemplatePositions(templateName, isReversed) {
         baseWidth: 88,
         rotation: 18,
       },
+      {
+        type: "note",
+        zone: "innerLeft",
+        top: 22,
+        baseWidth: 72,
+        rotation: -10,
+      },
+      {
+        type: "note",
+        zone: "farRight",
+        top: 74,
+        baseWidth: 66,
+        rotation: 12,
+      },
     ],
 
     splitDiagonalB: [
@@ -80,6 +94,20 @@ function getTemplatePositions(templateName, isReversed) {
         top: 52,
         baseWidth: 88,
         rotation: -18,
+      },
+      {
+        type: "note",
+        zone: "innerLeft",
+        top: 22,
+        baseWidth: 72,
+        rotation: -10,
+      },
+      {
+        type: "note",
+        zone: "farRight",
+        top: 74,
+        baseWidth: 66,
+        rotation: 12,
       },
     ],
 
@@ -105,6 +133,20 @@ function getTemplatePositions(templateName, isReversed) {
         baseWidth: 85,
         rotation: -14,
       },
+      {
+        type: "note",
+        zone: "innerLeft",
+        top: 22,
+        baseWidth: 72,
+        rotation: -10,
+      },
+      {
+        type: "note",
+        zone: "farRight",
+        top: 74,
+        baseWidth: 66,
+        rotation: 12,
+      },
     ],
 
     sideAndBottom: [
@@ -128,6 +170,20 @@ function getTemplatePositions(templateName, isReversed) {
         top: 18,
         baseWidth: 90,
         rotation: 20,
+      },
+      {
+        type: "note",
+        zone: "innerLeft",
+        top: 22,
+        baseWidth: 72,
+        rotation: -10,
+      },
+      {
+        type: "note",
+        zone: "farRight",
+        top: 74,
+        baseWidth: 66,
+        rotation: 12,
       },
     ],
 

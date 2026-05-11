@@ -352,7 +352,16 @@
   }
 
   .film-details-marginalia {
-    display: none;
+    display: flex;
+    top: 120px;
+    right: -10px;
+    gap: 28px;
+    z-index: 0;
+  }
+  
+  .film-details-marginalia img {
+    width: clamp(150px, 30vw, 220px);
+    opacity: 0.12;
   }
 }
 
@@ -361,4 +370,31 @@
     grid-template-columns: 1fr;
     gap: 28px;
   }
+}
+
+
+@media (max-width: 500px) {
+  .film-details-marginalia {
+    top: 150px;
+    right: 0px;
+    gap: 22px;
+  }
+
+  .film-details-marginalia img {
+    width: clamp(130px, 42vw, 190px);
+    opacity: 0.1;
+  }
+}
+
+
+.film-details-header,
+.film-details-accolades,
+.film-details-info,
+.film-details-description,
+.film-details-actions,
+.film-details-trailerWrap,
+.film-details-gallery,
+.film-details-quotes {
+  position: relative;
+  z-index: 2;
 }

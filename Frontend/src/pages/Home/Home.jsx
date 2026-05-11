@@ -19,13 +19,11 @@ const Home = () => {
         </div>
       </div>
 
-        {/*doodleburst*/}
-        <DoodleBurst />
-
         {/* Portrait */}
-        <div className="home-portrait">
-          <img src={portrait} alt="Luke Reilly portrait" />
-        </div>
+      <div className="home-portrait">
+        <DoodleBurst />
+        <img src={portrait} alt="Luke Reilly portrait" />
+      </div>
 
         {/* Intro */}
         <div className="home-intro">

@@ -1,38 +1,25 @@
 .home {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(
-  135deg,
-  #000000 0%,
-  #000 55%
-);
+  background: linear-gradient(135deg, #000000 0%, #000 55%);
   color: white;
-
-  /* breathing room */
-  padding: 32px 32px 0 32px; 
+  padding: 32px 32px 0;
+  overflow: hidden;
 }
 
 .home-inner {
   position: relative;
   min-height: calc(100vh - 32px);
   isolation: isolate;
-
 }
 
-/* ---------------------------
-   BIG TYPOGRAPHY ANCHOR
---------------------------- */
-
-.home-type {
-  position: relative;
-  min-height: 100vh;
-}
+/* Title */
 
 .home-titleRow {
   position: absolute;
   left: 0;
   bottom: 20px;
-  z-index: 3;
+  z-index: 8;
   overflow: visible;
   font-family: "Boldonse", system-ui;
 }
@@ -46,11 +33,10 @@
 
 .home-name {
   margin: 0;
-  display: block;
   position: relative;
-  z-index: 2;
+  z-index: 8;
 
-  font-size: clamp(70px, 12vw, 100px);
+  font-size: clamp(4.4rem, 8vw, 6.25rem);
   line-height: 0.9;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -60,70 +46,49 @@
 .home-nameUnderline {
   position: absolute;
   left: 0;
-  bottom: -140px;   /* adjust this */
+  bottom: -140px;
   width: 100%;
   height: auto;
   display: block;
-  z-index: 1;
+  z-index: 7;
   pointer-events: none;
 }
 
-
-
-.home-name-rest {
-  display: inline-block;
-  opacity: 0.95;
-}
-
-/* ---------------------------
-   PORTRAIT
---------------------------- */
+/* Portrait */
 
 .home-portrait {
   position: absolute;
-  right: -60px;
+  right: -40px;
   bottom: 0;
-  top: auto;
-  z-index: 5;
+  z-index: 4;
 
-  width: min(750px, 60vw);
+  width: min(600px, 50vw);
 }
 
 .home-portrait img {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: block;
-  bottom: 0;
-
   border-radius: 2px;
   opacity: 1;
-
-  position: relative;
-  z-index: 3;
 }
 
-/* ---------------------------
-   INTRO TEXT
---------------------------- */
+/* Intro */
 
 .home-intro {
   position: absolute;
-  left: 0;                /* align with title */
+  left: 0;
   bottom: 32vh;
   width: 360px;
+  z-index: 7;
 }
 
 .home-role {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   font-size: 16px;
   letter-spacing: 0.04em;
   opacity: 0.9;
   color: var(--accent-color);
-}
-
-.home-intro,
-.home-titleRow {
-  z-index: 3;
 }
 
 .home-blurb {
@@ -133,11 +98,10 @@
   opacity: 0.85;
 }
 
-/*read more with doodle effects*/
-
 .home-readMore {
   position: relative;
   display: inline-block;
+  margin-top: 14px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -155,36 +119,235 @@
   transform: scaleX(1);
 }
 
-/* ---------------------------
-   RESPONSIVE TWEAKS
---------------------------- */
 
-@media (max-width: 800px) {
+.home-portrait {
+  position: absolute;
+}
+
+.home-portrait .doodleBurst {
+  position: absolute;
+  inset: auto;
+
+  top: -18%;
+  left: -38%;
+
+  width: 130%;
+height: 110%;
+
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+
+  clip-path: inset(0 -80% 12% 0);
+
+}
+
+.home-portrait .doodleBurst-layer {
+  position: absolute;
+
+  top: 55%;
+  left: 66%;
+
+  width: 130%;
+  max-width: none;
+
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+
+.home-portrait img {
+  position: relative;
+  z-index: 2;
+}
+.home-portrait img {
+  position: relative;
+  z-index: 2;
+}
+
+/* Tablet / compressed desktop */
+
+@media (max-width: 1000px) {
   .home {
-    padding: 20px;
+    padding: 110px 28px 0;
+  }
+
+  .home-name {
+    font-size: clamp(3.5rem, 7vw, 4.8rem);
+  }
+
+  .home-nameWrap {
+    bottom: 58px;
+  }
+
+  .home-nameUnderline {
+    bottom: -105px;
   }
 
   .home-portrait {
-    position: relative;
-    top: auto;
-    right: auto;
-
-    width: min(520px, 100%);
-    margin: 10vh auto 0 auto;
+    width: min(560px, 58vw);
+    right: -40px;
   }
 
   .home-intro {
-    position: relative;
-    right: auto;
-    bottom: auto;
+    bottom: 34vh;
+    width: 330px;
+  }
+}
 
-    width: 100%;
-    margin-top: 24px;
+/* Switch to stacked layout */
+
+@media (max-width: 760px) {
+  .home {
+    min-height: auto;
+    padding: 96px 22px 54px;
+    overflow: hidden;
   }
 
+  .home-inner {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .home-titleRow,
+  .home-portrait,
+  .home-intro {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+
+  .home-intro {
+    order: 3;
+    width: 100%;
+    max-width: 520px;
+    z-index: 7;
+  }
+
+  .home-portrait {
+    order: 1;
+    width: min(420px, 82vw);
+    margin: 0 auto;
+    z-index: 4;
+  }
+
+  .home-portrait img {
+    width: 100%;
+  }
+
+  .home-titleRow {
+    order: 2;
+    z-index: 8;
+  }
+
+  .home-nameWrap {
+    bottom: auto;
+  }
 
   .home-name {
-    left: 20px;
-    bottom: 20px;
+    font-size: clamp(2.6rem, 9.5vw, 4.2rem);
+    line-height: 0.95;
+  }
+
+  .home-nameUnderline {
+    position: relative;
+    left: auto;
+    bottom: auto;
+
+    display: block;
+    width: clamp(260px, 62vw, 520px);
+
+    margin-top: 14px;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 520px) {
+  .home {
+    padding: 88px 18px 44px;
+  }
+
+  .home-inner {
+    gap: 22px;
+  }
+
+  .home-intro {
+    max-width: 100%;
+  }
+
+  .home-blurb {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .home-portrait {
+    width: min(330px, 78vw);
+  }
+
+  .home-name {
+    font-size: clamp(2.25rem, 10vw, 3.15rem);
+  }
+
+  .home-nameUnderline {
+    width: clamp(220px, 68vw, 360px);
+    margin-top: 10px;
+  }
+
+}
+
+/* Very narrow */
+
+@media (max-width: 380px) {
+  .home-name {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+
+  .home-portrait {
+    width: min(280px, 76vw);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px) {
+  .home-portrait .doodleBurst {
+    top: -14%;
+    left: -34%;
+    width: 130%;
+    height: 110%;
+  }
+
+  .home-portrait .doodleBurst-layer {
+    top: 54%;
+    left: 64%;
+    width: 130%;
+  }
+}
+
+@media (max-width: 520px) {
+  .home-portrait .doodleBurst {
+    top: -10%;
+    left: -30%;
+    width: 125%;
+    height: 105%;
+  }
+
+  .home-portrait .doodleBurst-layer {
+    top: 52%;
+    left: 62%;
+    width: 125%;
   }
 }

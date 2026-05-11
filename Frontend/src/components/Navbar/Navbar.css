@@ -6,23 +6,27 @@
   z-index: 1000;
   padding: 24px 32px;
   background: transparent;
+  box-sizing: border-box;
 }
 
 .navbar-inner {
   display: flex;
   justify-content: flex-end;
   gap: 28px;
+  min-width: 0;
 }
 
 .nav-link {
   position: relative;
   display: inline-block;
+  flex: 0 0 auto;
   color: white;
   text-decoration: none;
   font-size: 17px;
   letter-spacing: 0.08em;
   opacity: 0.58;
   transition: opacity 0.25s ease;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -36,4 +40,60 @@
 .nav-link:hover::after,
 .nav-link.active::after {
   transform: scaleX(1);
+}
+
+/* Tablet: tighten spacing before scrolling is needed */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 22px 24px;
+  }
+
+  .navbar-inner {
+    gap: 22px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+    letter-spacing: 0.07em;
+  }
+}
+
+/* Mobile: allow horizontal scroll */
+@media (max-width: 680px) {
+  .navbar {
+    padding: 18px 0;
+    overflow: hidden;
+  }
+
+  .navbar-inner {
+    justify-content: flex-start;
+    gap: 22px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 20px 8px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .navbar-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    scroll-snap-align: start;
+  }
+}
+
+/* Very small */
+@media (max-width: 420px) {
+  .navbar-inner {
+    gap: 18px;
+    padding-inline: 18px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
 }

@@ -183,10 +183,7 @@
     gap: 18px;
   }
 
-  .fiction-header-marginalia {
-    width: min(70vw, 280px);
-    margin-top: 0;
-  }
+  
 
   .fiction-list {
     gap: 80px;
