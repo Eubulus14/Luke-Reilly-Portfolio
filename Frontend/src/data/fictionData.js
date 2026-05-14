@@ -2,7 +2,7 @@ const fictionData = [
     {
         slug: "interval",
         title: "Interval",
-        genre: "Ghost Story",
+        genre: "Short Story",
         medium: "//Featured in a Short Story Collection",
         publication: "BUOY PRESS",
         excerpt:

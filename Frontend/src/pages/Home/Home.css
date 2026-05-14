@@ -59,10 +59,10 @@
 .home-portrait {
   position: absolute;
   right: -40px;
-  bottom: 0;
+  bottom: 0px;
   z-index: 4;
 
-  width: min(600px, 50vw);
+  width: min(650px, 55vw);
 }
 
 .home-portrait img {
